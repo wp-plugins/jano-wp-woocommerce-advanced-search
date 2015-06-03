@@ -21,7 +21,7 @@ it is working like google search but it will search you website.
 
 ShortCode : [bt_search_form class="style2" Placeholder=" Search Products" posttype="product" perPage="10" loader="loader-2" loaderImg=""] 
 
-Or <?php echo do_short('[bt_search_form class="style2" Placeholder=" Search Products" posttype="product" perPage="10" loader="loader-2" loaderImg=""]'); ?> for use in template files.
+Or &#60;?php echo do_short('[bt_search_form class="style2" Placeholder=" Search Products" posttype="product" perPage="10" loader="loader-2" loaderImg=""]'); ?&#62; for use in template files.
 
 live Demo : <a href="http://www.w3beginner.com/janothemes/" target="_blank">here</a>
 
