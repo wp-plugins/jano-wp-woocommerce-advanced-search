@@ -8,7 +8,7 @@
  
  Author: Allah Noor Burki
  
- Author URI: https://w3beginner.com/
+ Author URI: http://w3beginner.com/
  
 */
 define('BTSEARCH_VERSION', '1.0');
