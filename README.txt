@@ -8,7 +8,7 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-jano-woocommerce-advanced-search is the best plugin for ajax, autosuggest products and posts search,
+jano wp and woocommerce advanced search is the best plugin for wordpress and woocommerce, autosuggest products and posts search,
 
 == Description ==
 
@@ -33,9 +33,7 @@ live Demo : <a href="http://www.w3beginner.com/janothemes/" target="_blank">here
 == Frequently Asked Questions ==
 
 == Screenshots ==
-
-1. This screen shot description corresponds to .
-2. This is the second screen shot
+1. screenshot-1.jpg
 
 == Translators === Available Languages =* English (Default)* ducth
 
