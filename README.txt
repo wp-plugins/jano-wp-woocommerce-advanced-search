@@ -1,0 +1,48 @@
+=== jano wp and woocommerce advanced search ===
+Contributors: janothemes
+Donate link: 
+Tags: advance search, ajax search, search, autocomplete, autosuggest, woocommerce, woocommerce search, products search, live search, Predictive Search, wp search, brilliant search, janothemes, janothemes search, ecommerce search, post search, blog search  
+Requires at least: 3.0.1
+Tested up to: 4.2
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+jano-woocommerce-advanced-search is the best plugin for ajax, autosuggest products and posts search,
+
+== Description ==
+
+The best ever plugin for wordpress and woocommerce search, it can be use to search products Or posts Or all Posts types,
+After installing use the shortcode to make the search form, which you can use in text widget, editor or in template files to create the search form.
+
+after setting up everyting, When you type in anything thing in search box, A list of suggestions will be showed with link to all search results at the bottom of list,
+
+it is working like google search but it will search you website.
+
+ShortCode : [bt_search_form class="style2" Placeholder=" Search Products" posttype="product" perPage="10" loader="loader-2" loaderImg=""] 
+
+Or <?php echo do_short('[bt_search_form class="style2" Placeholder=" Search Products" posttype="product" perPage="10" loader="loader-2" loaderImg=""]'); ?> for use in template files.
+
+live Demo : <a href="http://www.w3beginner.com/janothemes/" target="_blank">here</a>
+
+== Installation ==
+1. Unzip the downloaded zip file.
+2. Upload the plugin folder into the `wp-content/plugins/` directory of your WordPress site.
+3. Activate `Jano wordpress and woocommerce search` from Plugins page
+
+== Frequently Asked Questions ==
+
+== Screenshots ==
+
+1. This screen shot description corresponds to .
+2. This is the second screen shot
+
+== Translators === Available Languages =* English (Default)* ducth
+
+== Changelog ==
+
+= 1.0 =
+* Initial release.
+
+== Upgrade Notice ==
+
