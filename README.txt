@@ -19,9 +19,6 @@ after setting up everyting, When you type in anything thing in search box, A lis
 
 it is working like google search but it will search you website.
 
-ShortCode : [bt_search_form class="style2" Placeholder=" Search Products" posttype="product" perPage="10" loader="loader-2" loaderImg=""] 
-
-Or &#60;?php echo do_short('[bt_search_form class="style2" Placeholder=" Search Products" posttype="product" perPage="10" loader="loader-2" loaderImg=""]'); ?&#62; for use in template files.
 
 live Demo : <a href="http://www.w3beginner.com/janothemes/" target="_blank">here</a>
 
@@ -29,6 +26,10 @@ live Demo : <a href="http://www.w3beginner.com/janothemes/" target="_blank">here
 1. Unzip the downloaded zip file.
 2. Upload the plugin folder into the `wp-content/plugins/` directory of your WordPress site.
 3. Activate `Jano wordpress and woocommerce search` from Plugins page
+
+ShortCode : [bt_search_form class="style2" Placeholder=" Search Products" posttype="product" perPage="10" loader="loader-2" loaderImg=""] 
+
+Or &#60;?php echo do_short('[bt_search_form class="style2" Placeholder=" Search Products" posttype="product" perPage="10" loader="loader-2" loaderImg=""]'); ?&#62; for use in template files.
 
 == Frequently Asked Questions ==
 
