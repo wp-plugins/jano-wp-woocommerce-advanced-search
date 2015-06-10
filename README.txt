@@ -1,7 +1,7 @@
 === jano wp and woocommerce advanced search ===
 Contributors: janothemes
 Donate link: 
-Tags: advance search, ajax search, search, autocomplete, autosuggest, woocommerce, woocommerce search, products search, live search, Predictive Search, wp search, brilliant search, janothemes, janothemes search, ecommerce search, post search, blog search  
+Tags: advance search, widget, search widget, ajax search, search, autocomplete, autosuggest, woocommerce, woocommerce search, products search, live search, Predictive Search, wp search, brilliant search, janothemes, janothemes search, ecommerce search, post search, blog search  
 Requires at least: 3.0.1
 Tested up to: 4.2
 Stable tag: 1.0
