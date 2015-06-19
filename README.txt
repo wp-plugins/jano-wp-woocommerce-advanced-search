@@ -22,7 +22,7 @@ it is working like google search but it will search you website.
 
 live Demo : <a href="http://www.w3beginner.com/janothemes/" target="_blank">here</a>
 
-<b>We are going to launch the premium version of this plugin in few days.</b>
+<strong>We are going to launch the premium version of this plugin in few days.</strong>
 
 features :
 
