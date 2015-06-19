@@ -22,6 +22,17 @@ it is working like google search but it will search you website.
 
 live Demo : <a href="http://www.w3beginner.com/janothemes/" target="_blank">here</a>
 
+<b>We are going to lunch the premium version of this plugin in few days.</b>
+features :
+<ul>
+<li>Show post image in search result.</li>
+<li>Show price of products(woocommerce products) in search result.</li>
+<li>Show Excerpt in search result.</li>
+<li>Show Categories in search result.</li>
+<li>Show Tags in search result.</li>
+<li>Multiple form designs.</li>
+</ul>
+
 == Installation ==
 1. Unzip the downloaded zip file.
 2. Upload the plugin folder into the `wp-content/plugins/` directory of your WordPress site.
