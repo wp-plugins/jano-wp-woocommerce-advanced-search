@@ -17,7 +17,7 @@ After installing use the shortcode to make the search form, which you can use in
 
 after setting up everyting, When you type in anything thing in search box, A list of suggestions will be showed with link to all search results at the bottom of list,
 
-live Demo and Documentation : <a href="http://www.w3beginner.com/janothemes/" target="_blank">here</a>
+live Demo and Documentation : <a href="http://www.w3beginner.com/janothemes/" target="_blank">Click Here</a>
 
 <strong>We are going to launch the premium version of this plugin in few days.</strong>
 
