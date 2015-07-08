@@ -17,7 +17,7 @@ After installing use the shortcode to make the search form, which you can use in
 
 after setting up everyting, When you type in anything thing in search box, A list of suggestions will be showed with link to all search results at the bottom of list,
 
-live Demo : <a href="http://www.w3beginner.com/janothemes/" target="_blank">here</a>
+live Demo and Documentation : <a href="http://www.w3beginner.com/janothemes/" target="_blank">here</a>
 
 <strong>We are going to launch the premium version of this plugin in few days.</strong>
 
@@ -26,6 +26,7 @@ features :
 <ul>
 <li>Show post image in search result.</li>
 <li>Show price of products(woocommerce products) in search result.</li>
+<li>Show woocommerce on Sale product tag in search result.</li>
 <li>Show Excerpt in search result.</li>
 <li>Show Categories in search result.</li>
 <li>Show Tags in search result.</li>
