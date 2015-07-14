@@ -23,7 +23,7 @@ class BTsearch {
 	
 	wp_enqueue_style( 'btsearch-fontello-style', BTSEARCH_URL . '/assets/css/fontello.css' ,'', '',false);
 			
-	wp_enqueue_script( 'btsearch-script', BTSEARCH_URL . '/assets/js/auto-complete.js', array('jquery'), '1.0', true );
+	wp_enqueue_script( 'btsearch-script', BTSEARCH_URL . '/assets/js/auto-complete.js', array('jquery'), '1.0' );
 			
  }
  
