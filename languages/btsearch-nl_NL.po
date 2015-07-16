@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: Woocommerce Advance Search 1.0\n"
+"POT-Creation-Date: 2015-05-15 16:47+0300\n"
+"PO-Revision-Date: 2015-06-03 00:03+0500\n"
+"Last-Translator: Allah Noor Burki <janothemes@gmail.com>\n"
+"Language-Team: Allah Noor Burki <janothemes@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Language: nl_NL\n"
+"X-Generator: Poedit 1.7.6\n"
+
+# <?php echo __("Nothing Found...","janothemes"); ?>
+#. Text in function
+#: lang.php:1
+msgid "Nothing Found..."
+msgstr "Niets Gevonden..."
+
+# <?php echo __("Price","janothemes"); ?>
+#. Text in function
+#: lang.php:1
+msgid "Price"
+msgstr "Prijs"
+
+# <?php echo  __("Search","janothemes"); ?>
+#. Text in function
+#: lang.php:1
+msgid "Search"
+msgstr "Zoeken"
+
+# <?php echo __("Search...","janothemes"); ?>
+#. Text in function
+#: lang.php:1
+msgid "Search..."
+msgstr "Zoeken..."
+
+# <?php echo __("View All...","btsearch"); ?>
+#. Text in function
+#: lang.php:1
+msgid "View All"
+msgstr "Bekijk alles"
