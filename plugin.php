@@ -26,3 +26,15 @@ require_once (BTSEARCH_DIR."/bt-search.php");
 $btsearch = new BTsearch;
 
 global $formID;
+
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'btsearch_add_plugin_action_links' );
+
+function btsearch_add_plugin_action_links( $links ) {
+
+	return array_merge( $links,
+		array(
+			'DD' => '<a target="_blank" href="http://janothemes.com">Demo & Docs</a>'
+		)
+		
+	);
+}
