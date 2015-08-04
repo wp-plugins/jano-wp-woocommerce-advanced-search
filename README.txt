@@ -4,7 +4,7 @@ Donate link:
 Tags: advance search, widget, search widget, ajax search, search, autocomplete, autosuggest, woocommerce, woocommerce search, products search, product search, live search, Predictive Search, wp search, brilliant search, janothemes, janothemes search, ecommerce search, post search, blog search  
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 1.0
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,12 @@ Or &#60;?php echo do_short('[bt_search_form class="style2" Placeholder=" Search 
 == Translators === Available Languages =* English (Default)* ducth
 
 == Changelog ==
+
+= 1.5 =
+* new:  cross is added to search field to empty field.
+* update: Search Query.
+* update: Plugin Core.
+* fixed: miner bugs
 
 = 1.0 =
 * Initial release.
