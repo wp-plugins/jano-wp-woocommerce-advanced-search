@@ -27,6 +27,8 @@
 			
             base.requests = Array();
 			
+			base.runningAjax = true;
+			
             base.btoptions = $.extend({},defaultOptions, options);
           
 		    base.container = $('#'+base.btoptions.formID+' .bt-search-result-container');
@@ -41,6 +43,14 @@
 			
 			$(document).on('click', function (e) { base.hideResults(e); });
 			
+			$('#'+base.btoptions.formID+' .btsearch-cross').on('click', function (e){ 
+													   
+				base.val(''); 
+				
+				base.hideCross();
+				
+			});
+			
         };
 		
         base.onKeydown = function(e) {
@@ -50,6 +60,12 @@
 		base.onKeyup = function(e) {
 			
 			var basevalue = base.val();
+			
+			if( basevalue.length == 0 ) {
+				
+				base.hideCross();
+					
+			}
 			
 			if( base.btoptions.minChar <= basevalue.length) {
 				
@@ -102,6 +118,9 @@
 					}
 					
 				}
+				
+				base.hideCross();
+				
 				base.requests.push(
 								   
 					$.post( base.btoptions.siteurl+"/wp-admin/admin-ajax.php", data, function(response) {
@@ -109,6 +128,8 @@
 							isResults = true;							
 							
 							base.Response = response;
+							
+							base.runningAjax = true;
 							
 							cachedResponse[basevalue] = response;
 							
@@ -123,7 +144,16 @@
 		
 		base.onBlur = function(e) {
 				
-			   
+			  if(base.runningAjax == false) { 
+				
+				if(base.val() != '') {
+				
+					base.showCross();
+				
+				}
+				
+			 } 
+			  
 			 if (base.btoptions.onSearchComplete.call(base.btoptions) === false) {
 
                     return;
@@ -175,6 +205,10 @@
 			 	base.container.css({'width' : base.btoptions.resultContainerWidth});
 			 }
 			 base.container.show();
+			 
+			 base.runningAjax = false;
+			 
+			 base.showCross();
 		}
 		
 		base.hideResults = function(event) { 
@@ -182,6 +216,22 @@
 					!$(event.target).closest( "#"+base.btoptions.formID+" .bt-search-field" ).length) {
        				 base.container.hide();
    			 }
+		}
+		
+		base.hideCross = function() {
+			
+			 $('#'+base.btoptions.formID+' .btsearch-cross').removeClass('btsearch-cross-show');
+			
+		}
+		
+		base.showCross = function() { 
+		
+			if( base.val() != '' ){
+			 	
+				$('#'+base.btoptions.formID+' .btsearch-cross').addClass('btsearch-cross-show');
+		    
+			}
+			
 		}
 		
         base.init();

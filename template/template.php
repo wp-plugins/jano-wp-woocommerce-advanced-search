@@ -10,9 +10,10 @@
 						autocomplete="off"
 				/><button class="bt-search-submit icon-search-2"><?php  __('Search','janothemes'); ?></button>
 				<span class="btsearch-loader "> </span>
+				<span class="icon-cancel-2 btsearch-cross "> </span>
 				<div class="bt-search-result-container"></div>
 				<?php
-				$post_types = (isset($args['posttype'])) ? $args['posttype'] : 'product';
+				$post_types = (isset($args['posttype'])) ? $args['posttype'] : 'post';
 				$post_types = explode(",",$post_types);
 				if(count($post_types) > 1) {
 				foreach($post_types as $post_type){
@@ -41,7 +42,7 @@ jQuery(document).ready(function() {
 		perPage : "<?php echo (isset($args['perpage']) && $args['perpage'] > 0) ? $args['perpage'] : 5; ?>",
 		loaderImg : "<?php echo (isset($args['loaderimg']) && $args['loaderimg'] != '') ? $args['loaderimg'] : false; ?>",
 		loader : "<?php echo (isset($args['loader'])) ? $args['loader'] : false; ?>",
-		postType : "<?php echo (isset($args['posttype'])) ? $args['posttype'] : 'product'; ?>",
+		postType : "<?php echo (isset($args['posttype'])) ? $args['posttype'] : 'post'; ?>",
 		siteurl : "<?php echo site_url(); ?>",
 		view_all : "<?php echo __('View All','janothemes'); ?>"
 	

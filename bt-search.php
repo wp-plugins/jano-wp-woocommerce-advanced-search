@@ -37,45 +37,61 @@ class BTsearch {
 	
 	$post_type = $_REQUEST['postType'];
 	
-	$meta_query = array();
+	$meta_query = '';
+			
+	$meta_where = '';
 	
 	if(isset($post_type) && $post_type == 'product' ) {
 	
-		$price = (isset($_REQUEST['productPrice']) && $_REQUEST['productPrice'] == true) ? true : false;
-		
-		$meta_query = array(
-
-                        'key'     => '_visibility',
-
-                        'value'   => array( 'search', 'visible' ),
-
-                        'compare' => 'IN'
-
-                    );
-		
+		$meta_query = " INNER JOIN {$wpdb->prefix}postmeta  AS pm  ON pm.post_id= {$wpdb->prefix}posts.ID ";
+				
+		$meta_where = " AND pm.meta_key='_visibility' and pm.meta_value IN( 'search', 'visible' ) ";
+	
 	}
 	
-	 $args = array(
-	 
-                's'                   => apply_filters( 'btsearch_keyword', $s ),
-
-                'post_type'           => explode(",",$post_type),
-
-                'post_status'         => 'publish',
-
-                'orderby'             => 'title',
-
-                'order'               => 'ASC',
-
-                'posts_per_page'      => apply_filters( 'btsearch_posts_per_page', $per_page ),
+	 if ( $post_type == 'any' ) {
 				
-				'ignore_sticky_posts' => 1,
-
-                'meta_query'          => array( $meta_query )
-
-            );
+			$posttypes = get_post_types( array(
+				 'publicly_queryable' => true,
+				'show_ui' => true 
+			), 'objects' );
 			
-		 $search_results = get_posts( $args );
+			$post_type = '';
+			
+			$i = 0;
+			foreach ( $posttypes as $posttype ) {
+				
+				if ( $i > 0 ) {
+					
+					$post_type .= "," . $posttype->name;
+					
+				} else {
+					
+					$post_type .= $posttype->name;
+				}
+				$i++;
+			}
+			
+		}
+			
+		$s = apply_filters( 'btsearch_keyword', $s );
+			
+		$per_page = apply_filters( 'btsearch_posts_per_page', $per_page );
+			
+		$sql = "SELECT {$wpdb->prefix}posts.* FROM {$wpdb->prefix}posts
+			" . $meta_query . "	 
+			WHERE 1=1 AND 
+			((({$wpdb->prefix}posts.post_title LIKE '%" . $s . "%') OR 
+			({$wpdb->prefix}posts.post_content LIKE '%" . $s . "%'))) AND 
+			
+			{$wpdb->prefix}posts.post_type IN( '" . implode( "','", explode( ",", $post_type ) ) . "' ) AND 
+			({$wpdb->prefix}posts.post_status = 'publish')
+			" . $meta_where . " 
+			ORDER BY {$wpdb->prefix}posts.post_title LIKE '%" . $s . "%' DESC,
+			{$wpdb->prefix}posts.post_date DESC
+			LIMIT 0, " . $per_page;
+		
+		$search_results = $wpdb->get_results( $sql );
 
 		 if(!empty($search_results)) { 
 

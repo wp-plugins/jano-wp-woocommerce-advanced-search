@@ -4,14 +4,14 @@
  
  Description: Advance wordpress and WooCommerce product Seach through jquery,Ajax.
  
- Version: 1.0
+ Version: 1.5
  
  Author: Allah Noor Burki
  
- Author URI: http://w3beginner.com/
+ Author URI: http://janothemes.com/
  
 */
-define('BTSEARCH_VERSION', '1.0');
+define('BTSEARCH_VERSION', '1.5');
 
 define('BTSEARCH_DIR', dirname(__FILE__));
 

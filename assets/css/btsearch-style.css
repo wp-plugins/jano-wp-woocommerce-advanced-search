@@ -95,8 +95,25 @@
   background-color:#FFFFFF;
   background-position:center right !important;
 }
+
 .btsearch-loader.btsearch-show {
   display:block;
+}
+.btsearch-cross {
+  background-color: #ffffff;
+  background-position: right center !important;
+  background-repeat: no-repeat;
+  height: 16px;
+  position: absolute;
+  right: 53px;
+  top: 12px;
+  width: 26px;
+  display:none;
+  cursor:pointer;
+}
+
+.btsearch-cross-show {
+	display:block;
 }
 .btsearch-loader.loader-1 {
 	background:url(../img/loader-1.GIF) no-repeat;
