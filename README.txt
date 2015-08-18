@@ -19,7 +19,7 @@ after setting up everyting, When you type in anything thing in search box, A lis
 
 live Demo and Documentation : <a href="http://www.janothemes.com/" target="_blank">Click Here</a>
 
-<strong>We are going to launch the premium version of this plugin in few days.</strong>
+<strong>Go to the Premium Version<a href="http://www.janothemes.com/premium-version/">Click here</a></strong>
 
 features :
 
