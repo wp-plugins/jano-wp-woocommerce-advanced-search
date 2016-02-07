@@ -46,7 +46,7 @@ class BTsearch {
 		$meta_query = " INNER JOIN {$wpdb->prefix}postmeta  AS pm  ON pm.post_id= {$wpdb->prefix}posts.ID ";
 				
 		$meta_where = " AND pm.meta_key='_visibility' and pm.meta_value IN( 'search', 'visible' ) ";
-	
+	    	$meta_where .= "OR (pm.meta_value='{$s}' AND pm.meta_key = '_sku') ";
 	}
 	
 	 if ( $post_type == 'any' ) {
